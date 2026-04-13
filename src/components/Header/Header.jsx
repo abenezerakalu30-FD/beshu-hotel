@@ -24,19 +24,21 @@ function Header() {
       {/* NAVBAR */}
       <nav className={`navbar ${menuOpen ? "active" : ""}`}>
         {navLinks.map((link, index) => (
-          <a
+          <Link
             key={index}
-            href={link.path}
+            to={link.path}
             className="nav-link"
             onClick={() => setMenuOpen(false)} // close on click
           >
             {link.name}
-          </a>
+          </Link>
         ))}
       </nav>
 
       {/* BUTTON */}
-      <a href="/book" className="nav-btn">Book now</a>
+      <Link to="/book" className="nav-btn">
+        Book now
+      </Link      >
       {/* HAMBURGER */}
       <div
         className="menu-btn"
