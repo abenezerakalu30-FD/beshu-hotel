@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Header.css";
 import logo from "../../asset/logo/beshu-logo.png";
 import {Menu,X} from "lucide-react"
+import { Link } from "react-router-dom";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ function Header() {
         {navLinks.map((link, index) => (
           <a
             key={index}
-            href={link.path}
+            Link={link.path}
             className="nav-link"
             onClick={() => setMenuOpen(false)} // close on click
           >
