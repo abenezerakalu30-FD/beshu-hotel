@@ -1,0 +1,44 @@
+
+/* CARD */
+.room-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.room-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* IMAGE */
+.room-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* CONTENT */
+.room-card-title {
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    padding: 10px 15px 0;
+}
+
+.room-card-txt {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    padding: 5px 15px 10px;
+    color: #555;
+}
+
+/* PRICE */
+.room-card-price {
+    display: block;
+    font-weight: bold;
+    color: #c59d5f;
+    padding: 0 15px 15px;
+}

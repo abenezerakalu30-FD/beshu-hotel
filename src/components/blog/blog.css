@@ -1,0 +1,81 @@
+/* =========================
+   BLOG SECTION
+========================= */
+.blog-section {
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* GRID */
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* CARD */
+.blog-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+}
+
+/* IMAGE */
+.blog-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.blog-content {
+  padding: 20px;
+}
+
+/* META */
+.blog-meta {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+/* TITLE */
+.blog-content h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+
+/* TEXT */
+.blog-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* BUTTON */
+.blog-btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+
+  background: rgb(11, 57, 121);
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.blog-btn:hover {
+  background: rgb(8, 40, 90);
+}

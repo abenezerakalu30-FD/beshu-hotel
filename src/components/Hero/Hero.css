@@ -1,0 +1,161 @@
+/* =========================
+   HERO LAYOUT
+========================= */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 60px;
+
+  background: url("../../asset/Hero/hero-img.png") no-repeat center/cover;
+  position: relative;
+}
+
+/* OVERLAY */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.3)
+  );
+}
+
+/* =========================
+   LEFT CONTENT
+========================= */
+.hero-left {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  color: white;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+}
+
+.hero-text {
+  margin: 20px 0;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.85);
+}
+
+.hero-btn {
+  padding: 12px 20px;
+  background: #c59d5f;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #a88245;
+}
+
+/* =========================
+   BOOKING CARD (GLASS STYLE)
+========================= */
+.hero-card {
+  position: relative;
+  z-index: 2;
+
+  backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.85);
+
+  padding: 30px;
+  border-radius: 16px;
+
+  width: 320px;
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.hero-card:hover {
+  transform: translateY(-5px);
+}
+
+/* CARD TITLE */
+.hero-card h3 {
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+/* INPUT GROUP */
+.card-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.card-group label {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.card-group input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  transition: 0.2s;
+}
+
+.card-group input:focus {
+  border-color: #c59d5f;
+  outline: none;
+}
+
+/* BUTTON */
+.card-btn {
+  width: 100%;
+  padding: 12px;
+
+  background: rgb(11, 57, 121);
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-btn:hover {
+  background: rgb(8, 40, 90);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+
+  .hero-left {
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 2.3rem;
+  }
+
+  .hero-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}

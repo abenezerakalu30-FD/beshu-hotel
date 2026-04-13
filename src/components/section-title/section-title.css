@@ -1,0 +1,70 @@
+/* =========================
+   WRAPPER
+========================= */
+.section-title-wrapper {
+    margin-bottom: 40px;
+}
+
+/* ALIGNMENTS */
+.section-title-wrapper.center {
+    text-align: center;
+}
+
+.section-title-wrapper.left {
+    text-align: left;
+}
+
+/* =========================
+   TITLE
+========================= */
+.section-title {
+    font-family: "Playfair Display", serif;
+    font-size: 2.2rem;
+    color: #222;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+/* UNDERLINE DECORATION */
+.section-title::after {
+    content: "";
+    display: block;
+
+    width: 50px;
+    height: 3px;
+
+    background: #c59d5f;
+
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+/* FIX ALIGNMENT FOR LEFT */
+.section-title-wrapper.left .section-title::after {
+    margin-left: 0;
+}
+
+/* =========================
+   SUBTITLE
+========================= */
+.section-subtitle {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: #666;
+
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+    }
+}

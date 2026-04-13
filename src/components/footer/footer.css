@@ -1,0 +1,123 @@
+/* MAIN FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+
+    padding: 40px 60px;
+    background: rgba(224, 223, 219, 0.5);
+    flex-wrap: wrap;
+}
+
+/* EACH COLUMN */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 250px;
+}
+
+/* LOGO */
+.footer-brand {
+    width: 180px;
+    height: auto; 
+}
+
+/* TEXT */
+.footer-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* TITLE */
+.footer-title {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* LINKS */
+.footer-link {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    color: #333;
+    transition: 0.2s ease;
+}
+
+.footer-link:hover {
+    color: #c59d5f;
+    transform: translateX(3px);
+}
+
+/* BUTTON */
+.footer-btn {
+    margin-top: 10px;
+    padding: 12px 16px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #0b3979;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.footer-btn:hover {
+    background: #082c5c;
+}
+/* NEWSLETTER */
+ footer .newsletter {
+    display: flex;
+    gap: 8px;
+}
+
+footer .newsletter input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    flex: 1;
+}
+
+footer .newsletter button {
+    padding: 10px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #0b3979;
+    color: white;
+    cursor: pointer;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+
+    text-align: center;
+    font-size: 0.85rem;
+    font-family: "Poppins", sans-serif;
+    color: #666;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 20px;
+    }
+
+    .footer-content {
+        max-width: 100%;
+    }
+}

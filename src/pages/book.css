@@ -1,0 +1,73 @@
+/* SECTION */
+.book-section {
+  padding: 60px 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* FORM */
+.book-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* ROW */
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+/* GROUP */
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* LABEL */
+.form-group label {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+/* INPUT */
+.form-group input,
+.form-group select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* BUTTON */
+.book-btn {
+  margin-top: 10px;
+  padding: 14px;
+
+  background: rgb(11, 57, 121);
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background: rgb(8, 40, 90);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+}

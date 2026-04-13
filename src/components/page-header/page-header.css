@@ -1,0 +1,96 @@
+/* =========================
+   PAGE HEADER
+========================= */
+.page-header {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 400px;
+
+    background: url("../../asset/page-header/pexels-artbovich-8135289.jpg") no-repeat center/cover;
+
+    /* smoother animation */
+    animation: zoomBg 10s ease-in-out infinite alternate;
+}
+
+/* OVERLAY */
+.page-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+/* CONTENT WRAPPER (optional but clean) */
+.page-header h1,
+.page-header p {
+    position: relative;
+    z-index: 2;
+}
+
+/* TITLE */
+.page-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3.2rem;
+    color: white;
+    text-align: center;
+}
+
+/* UNDERLINE */
+.page-header h1::after {
+    content: "";
+    display: block;
+
+    width: 60px;
+    height: 3px;
+
+    background: #c59d5f;
+
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+/* SUBTITLE */
+.page-header p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.05rem;
+    color: #e0e0e0;
+
+    margin-top: 12px;
+    text-align: center;
+}
+
+/* =========================
+   ANIMATION (SMOOTHER)
+========================= */
+@keyframes zoomBg {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.08);
+    }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .page-header {
+        height: 280px;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .page-header p {
+        font-size: 0.9rem;
+    }
+}

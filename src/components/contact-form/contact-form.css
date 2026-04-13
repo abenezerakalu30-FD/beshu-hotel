@@ -1,0 +1,143 @@
+/* MAIN CONTAINER */
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+
+    padding: 40px 20px;
+    margin: 40px;
+
+    background: #f8f9fb;
+    border-radius: 16px;
+}
+
+/* LEFT (FORM) */
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 100%;
+    max-width: 400px;
+}
+
+/* FORM GROUP */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contact-left label {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* INPUTS */
+.contact-left input,
+.contact-left textarea {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+
+    transition: 0.2s ease;
+}
+
+/* FOCUS EFFECT */
+.contact-left input:focus,
+.contact-left textarea:focus {
+    outline: none;
+    border-color: #c59d5f;
+    box-shadow: 0 0 0 2px rgba(197,157,95,0.2);
+}
+
+/* TEXTAREA */
+.contact-left textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+/* BUTTON */
+.contact-btn {
+    margin-top: 10px;
+    padding: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #0b3979;
+    color: white;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.contact-btn:hover {
+    background: #082c5c;
+}
+
+/* RIGHT SIDE */
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* CARD */
+.contact-card {
+    background: white;
+    padding: 50px 30px;
+
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* TEXT GROUP */
+.text-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 0.95rem;
+}
+
+/* ICON */
+.contact-icon {
+    color: #c59d5f;
+    width: 22px;
+    height: 22px;
+}
+
+/* LINKS */
+.contact-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-link:hover {
+    color: #c59d5f;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .contact-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-right {
+        width: 100%;
+        max-width: 400px;
+    }
+}
