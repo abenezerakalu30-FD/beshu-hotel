@@ -26,7 +26,7 @@ function Header() {
         {navLinks.map((link, index) => (
           <a
             key={index}
-            Link={link.path}
+            href={link.path}
             className="nav-link"
             onClick={() => setMenuOpen(false)} // close on click
           >
